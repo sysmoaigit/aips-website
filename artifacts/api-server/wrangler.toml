@@ -1,0 +1,17 @@
+name = "aips-api"
+main = "src/index.ts"
+compatibility_date = "2026-05-16"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "aips-prod"
+database_id = "3150d173-7a38-40cc-8a00-982d53c3d646"
+
+[[r2_buckets]]
+binding = "MEDIA"
+bucket_name = "aips-media"
+
+[vars]
+RESEND_FROM = "orders@aipremiumshop.com"
+NOTIFY_EMAIL = "sysmoai.com@gmail.com"
+ADMIN_USERNAME = "emon"
