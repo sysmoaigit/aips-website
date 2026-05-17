@@ -11,6 +11,10 @@ database_id = "3150d173-7a38-40cc-8a00-982d53c3d646"
 binding = "MEDIA"
 bucket_name = "aips-media"
 
+[[routes]]
+pattern = "api.aipremiumshop.com"
+custom_domain = true
+
 [vars]
 RESEND_FROM = "orders@aipremiumshop.com"
 NOTIFY_EMAIL = "sysmoai.com@gmail.com"
