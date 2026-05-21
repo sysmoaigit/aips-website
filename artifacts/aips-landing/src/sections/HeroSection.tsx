@@ -1,10 +1,10 @@
 import { useEffect, useState, forwardRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MessageCircle, ChevronRight, Star, Users, Calendar, Shield, Zap } from "lucide-react";
+import { ShoppingBag, ChevronRight, Star, Users, Calendar, Shield, Zap } from "lucide-react";
 import { PaymentBadges } from "@/components/PaymentBadges";
 import type React from "react";
 
-const WHATSAPP_LINK = "https://wa.me/8801865385348";
+const SHOP_LINK = "https://aips-shop.pages.dev";
 
 const ROTATING_LINES = [
   { problem: "Assignment deadline?", solution: "AI finishes it in 30 minutes" },
@@ -209,15 +209,15 @@ export const HeroSection = forwardRef<HTMLElement>((_, ref) => {
             className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-10"
           >
             <a
-              href={WHATSAPP_LINK}
+              href={SHOP_LINK}
               target="_blank"
               rel="noopener noreferrer"
               data-testid="hero-cta-primary"
               className="btn-cta px-8 py-4 rounded-xl text-lg font-bold flex items-center gap-2.5"
               style={{ boxShadow: "0 8px 30px rgba(37,211,102,0.25)" }}
             >
-              <MessageCircle className="w-5 h-5" />
-              Order on WhatsApp
+              <ShoppingBag className="w-5 h-5" />
+              Shop AI Plans
             </a>
             <a
               href="#pain-points"

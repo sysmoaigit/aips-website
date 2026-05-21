@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
-import { MessageCircle, Facebook, Instagram, Linkedin } from "lucide-react";
+import { ShoppingBag, Facebook, Instagram, Linkedin } from "lucide-react";
 import { useLocation } from "wouter";
 import { PrimaryBrandLogo } from "@/components/PrimaryBrandLogo";
 import { PaymentBadges } from "@/components/PaymentBadges";
 
 const WHATSAPP_LINK = "https://wa.me/8801865385348";
+const SHOP_LINK = "https://aips-shop.pages.dev";
 
 const FOOTER_COLS = [
   {
@@ -76,15 +77,15 @@ export function FinalCTASection() {
               Join 10,000+ customers who trust AI Premium Shop.
             </p>
             <a
-              href={WHATSAPP_LINK}
+              href={SHOP_LINK}
               target="_blank"
               rel="noopener noreferrer"
               data-testid="final-cta"
               className="bg-green-600 hover:bg-green-500 text-white font-bold py-4 px-8 rounded-xl text-lg shadow-lg mx-auto block mt-6 max-w-xs text-center flex items-center justify-center gap-2 transition-colors duration-200"
               style={{ boxShadow: "0 8px 30px rgba(37,211,102,0.25)" }}
             >
-              <MessageCircle className="w-5 h-5" />
-              Order on WhatsApp
+              <ShoppingBag className="w-5 h-5" />
+              View Plans & Order
             </a>
             <div className="flex flex-wrap items-center justify-center gap-2 mt-5">
               <span className="text-sm text-gray-500">Pay with</span>
